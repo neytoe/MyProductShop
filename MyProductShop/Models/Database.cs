@@ -8,7 +8,7 @@ namespace MyProductShop.Models
     //This models simulates a database for this application
     public class Database
     {
-        public static List<Product> GetProduct()
+        public static List<Product> GetAllProducts()
         {
             List<Product> product = new List<Product>
             {
@@ -72,7 +72,7 @@ namespace MyProductShop.Models
 
         public static Product GetProduct(string slug)
         {
-            List<Product> products = Database.GetProduct();
+            List<Product> products = Database.GetAllProducts();
             foreach (var item in products)
             {
                 if (item.Slug == slug)
