@@ -9,10 +9,10 @@ namespace MyProductShop.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Detail(string SlugLink)
+        public IActionResult Detail(string slugLink)
         {
             //Calls the method that gets a partciular product by ID
-            var product = Database.GetProduct(SlugLink);  
+            var product = Database.GetProduct(slugLink);  
             return View(product);
         }
 
