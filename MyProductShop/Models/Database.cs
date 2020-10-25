@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyProductShop.Models
 {
-    //This models simulates a database for this application
+    //This model simulates a database for this application
     public class Database
     {
         public static List<Product> GetAllProducts()
@@ -27,7 +27,7 @@ namespace MyProductShop.Models
                  new Product
                 {
                     ProductID =3,
-                    Name = " product",
+                    Name = "product",
                     Price= (decimal) 99.00
                 },
                  new Product
@@ -45,13 +45,13 @@ namespace MyProductShop.Models
                  new Product
                 {
                     ProductID =6,
-                    Name = " product",
-                    Price= (decimal) 99.00
+                    Name = "Product of the Month",
+                    Price= (decimal) 2999.00
                 },
                  new Product
                 {
                     ProductID =7,
-                    Name = " apple ",
+                    Name = "apple",
                     Price= (decimal) 199.00
                 },
                   new Product
