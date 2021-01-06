@@ -11,16 +11,12 @@ namespace MyProductShop.Controllers
     {
         public IActionResult Detail(string slugLink)
         {
-            //Calls the method that gets a partciular product by ID
-            var product = Database.GetProduct(slugLink);  
-            return View(product);
+            return View();
         }
 
         public IActionResult List()
         {
-            //Calls the method that gets all the products
-            var Allproducts = Database.GetAllProducts();
-            return View(Allproducts);
+            return View();
         }
     }
 }
